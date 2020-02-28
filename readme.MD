@@ -38,8 +38,8 @@ Users can sign up and log in to create a list with their desired cities for quic
 
 Git
 
-URL for the project repository: https://github.com/AmaliaGlez/Project-1
+URL for the project repository: https://github.com/adrianVide/project-IronHack-Module-1
 
 Trello
 
-URL for the project organization: https://trello.com/b/648McP9u/project-1
+URL for the project organization: 
