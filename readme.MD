@@ -34,7 +34,7 @@ Landing page with default cities weather snippets, search bar and personal area 
 
 ### Mobile Phone
 
-![mobilewireframe](https://github.com/adrianVide/project-IronHack-Module-1/blob/master/img/iPhone%20X-XS-11%20Pro%20%E2%80%93%201.jpg | width=100)
+![mobilewireframe](https://github.com/adrianVide/project-IronHack-Module-1/blob/master/img/iPhone%20X-XS-11%20Pro%20%E2%80%93%201.jpg =250x)
 
 ### Tablet
 
