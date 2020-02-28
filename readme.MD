@@ -32,9 +32,15 @@ Users data will be obtained from the sign up form and will be stored in browser'
 
 Landing page with default cities weather snippets, search bar and personal area link.
 
-![mobilewireframe](https://github.com/adrianVide/project-IronHack-Module-1/blob/master/img/iPhone%20X-XS-11%20Pro%20%E2%80%93%201.jpg)
+### Mobile Phone
+
+![mobilewireframe](https://github.com/adrianVide/project-IronHack-Module-1/blob/master/img/iPhone%20X-XS-11%20Pro%20%E2%80%93%201.jpg | width=100)
+
+### Tablet
 
 ![tabletwireframe](https://github.com/adrianVide/project-IronHack-Module-1/blob/master/img/iPad%20%E2%80%93%201.jpg)
+
+### Desktop
 
 ![tabletwireframe](https://github.com/adrianVide/project-IronHack-Module-1/blob/master/img/Web%201920%20%E2%80%93%201.jpg)
 
