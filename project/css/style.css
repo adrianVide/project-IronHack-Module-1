@@ -27,28 +27,37 @@ body{
     background-image:linear-gradient(
         rgba(255, 0, 149, 0.45), 
         rgba(255, 230, 0, 0.507)),
-    url(.././img/holiday-inn-express-madrid-2533391696-2x1.jpeg);
-    /* url(.././img/holiday-inn-express-madrid-2533391696-2x1.jpeg); */
+    url(.././img/kimpton-barcelona-1700x750-v2.jpeg);
+        /* url(.././img/holiday-inn-express-madrid-2533391696-2x1.jpeg); */
 
 }
 
-#city2 {
-    background-image: url(.././img/GettyImages-1148127304.jpg);
+#New-York {
+    background-image:linear-gradient(
+        rgba(255, 0, 149, 0.45), 
+        rgba(255, 230, 0, 0.507)),
+    url(.././img/GettyImages-1148127304.jpg);
 }
 
-#city3 {
+#Tokyo {
     background-image: url(.././img/iStock-896466722_Als-Schaufensterbild-Tokyo_1600x907.jpg);
     background-position-y: -100px;
 }
 
-#city4 {
-    background-image: url(.././img/kimpton-barcelona-1700x750-v2.jpeg);
+#Moscow {
+    background-image:linear-gradient(
+        rgba(255, 0, 149, 0.45), 
+        rgba(255, 230, 0, 0.507)),
+    url(.././img/moscow.jpg);
 }
-#city5 {
-    background-image: url(.././img/tour_img-1708983-97.jpg);
+#Madrid {
+    background-image:linear-gradient(
+        rgba(255, 0, 149, 0.45), 
+        rgba(255, 230, 0, 0.507)),
+    url(.././img/holiday-inn-express-madrid-2533391696-2x1.jpeg);
 }
 
-#city6 {
+#Los-Angeles {
     background-image: url(.././img/us_lax_playa_07_2880_1620.jpg);
 }
 

@@ -24,6 +24,7 @@ function getCityInfo(requestedCity) {
       //   convertUnixTimestamptoTime(cityUnixTime);
       let cityUnixSunrise = cityData.sys.sunrise;
       let cityUnixSunset = cityData.sys.sunset;
+      let cityId = cityName.split(' ').join('-');
       //   isDay(cityUnixTime, cityUnixSunrise, cityUnixSunset);
       console.log(cityName);
       console.log(cityWeatherDescription);
@@ -91,7 +92,7 @@ function getCityInfo(requestedCity) {
 
       let div = document.createElement("div");
       div.setAttribute("class", "col-md-6 city");
-      div.setAttribute("id", cityName);
+      div.setAttribute("id", cityId);
       div.innerHTML = `
       <span><img class="weather-icon" src=${selectIcon(
         cityWeatherIcon
@@ -110,4 +111,18 @@ function getCityInfo(requestedCity) {
     });
 }
 
-getCityInfo("barcelona");
+let cities = ['madrid', 'barcelona', 'los angeles', 'tokyo', 'moscow', 'new york'];
+
+
+cities.forEach(element => {
+  return getCityInfo(element)
+  
+});
+
+
+// getCityInfo("barcelona");
+// getCityInfo("tokyo");
+// getCityInfo("moscow");
+// getCityInfo("barcelona");
+// getCityInfo("tokyo");
+// getCityInfo("los angeles");
