@@ -2,7 +2,9 @@
 
 // let cityData;
 
-// function getCityInfo(requestedCity) {
+let cityContainer = document.getElementById('city-container');
+
+function getCityInfo(requestedCity) {
   fetch(
     `http://api.openweathermap.org/data/2.5/weather?q=${requestedCity}&units=metric&appid=f2e9867b2d799d7ffd947e467fc52274`
   )
@@ -50,11 +52,40 @@
           return formattedTime;
       }
       console.log(toTime(cityUnixTime));
+
+      function selectIcon(code){
+        switch(code){
+          case '02d':
+            return './img/thunder-01.png';
+            break;
+          case 'asdf':
+            return './img/sun.png';
+            break;
+        }
+          return './img/sun.png'
+      }
+
+      let div = document.createElement('div');
+      div.setAttribute('class', "col-md-6 city")
+      div.setAttribute('id', cityName)
+      div.innerHTML = `
+      <span><img class="weather-icon" src=${selectIcon(cityWeatherIcon)} alt='weather-icon'></span>
+      <div>
+          <span class="weather-description">${cityWeatherDescription}</span>
+          <span class="temperature">${cityTemp}°C</span>
+      </div>
+      
+      <div>
+          <span class="city-time">${toTime(cityUnixTime)}</span>
+          <span class="city-name">${cityName}</span>
+      </div>`
+
+        cityContainer.appendChild(div);
     });
 }
 
 
 
 
-getCityInfo("madrid");
+getCityInfo("barcelona");
 

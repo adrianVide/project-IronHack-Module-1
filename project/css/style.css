@@ -13,17 +13,18 @@ body{
 
 
 .city {
-    /* background-size: cover; */
+    background-size: cover;
     /* background-color: black; */
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     height: 250px;
     /* max-width: 100%; */
     /* object-fit: cover; */
     /* margin: 1px; */
+    border: 5px solid white;
 }
 
-#city1 {
-    background:linear-gradient(
+#Barcelona {
+    background-image:linear-gradient(
         rgba(255, 0, 149, 0.45), 
         rgba(255, 230, 0, 0.507)),
     url(.././img/holiday-inn-express-madrid-2533391696-2x1.jpeg);
@@ -37,6 +38,7 @@ body{
 
 #city3 {
     background-image: url(.././img/iStock-896466722_Als-Schaufensterbild-Tokyo_1600x907.jpg);
+    background-position-y: -100px;
 }
 
 #city4 {
@@ -150,3 +152,44 @@ body{
     bottom: 0%;
     right: 3%;
 }
+
+.fixed-menu {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+.fixed-menu {
+    position: fixed;
+    background-color: white;
+    bottom: 0px;
+    margin: 0px !important;
+    
+}
+
+.mag-glass {
+    width: 7vw;
+    margin: 4px;
+    vertical-align: middle;
+    
+}
+
+.logo-search-bar {
+    padding: 2px 5px;
+    
+    /* justify-content: space-between; */
+ }
+
+ .user-icon {
+    width: 50px;
+    height: 50px;
+
+    
+}
+.search-container input {
+    width: auto;
+    padding: 10px;
+ }
+}
+
