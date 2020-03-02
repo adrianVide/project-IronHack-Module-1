@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+
+
 .city {
     background-size: cover;
     /* background-color: black; */
@@ -16,7 +18,11 @@
 }
 
 .city1 {
-    background-image: url(.././img/holiday-inn-express-madrid-2533391696-2x1.jpeg);
+    background:linear-gradient(
+        rgba(0, 183, 255, 0.45), 
+        rgba(255, 230, 0, 0.507)),
+    url(.././img/holiday-inn-express-madrid-2533391696-2x1.jpeg);
+    /* url(.././img/holiday-inn-express-madrid-2533391696-2x1.jpeg); */
 
 }
 
@@ -43,12 +49,14 @@
     width: 70px;
     padding: 0;
     margin-right: 5px;
+    
 }
 
 .mag-glass {
-    width: 18px;
+    width: 40px;
     margin: 12px;
     vertical-align: middle;
+    
 }
 
 .search-container {
@@ -57,6 +65,7 @@
     background-color: rgb(242, 242, 242);
     float: none;
     width: 55%;
+    
 }
 
 .search-container input {
@@ -68,6 +77,7 @@
 
 .logo-search-bar {
    padding: 10px 25px;
+   
    /* justify-content: space-between; */
 }
 
@@ -87,9 +97,6 @@
   padding: 10px 28px;
 }
 
-.usearch {
-    display: inline-flex;
-}
 
 .weather-icon {
     height: 140px;
@@ -114,14 +121,15 @@
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 2em;
-    vertical-align: middle;
-    text-align: right;
+    vertical-align: bottom;
+    float: right;
 }
 
 .city-name {
     font-family: Arial, Helvetica, sans-serif;
     color: #FF0095;
-    font-size: 2em;
+    font-size: 4em;
     vertical-align: bottom;
-    text-align: right;
+    float: right;
+    padding-bottom: 0px;
 }
