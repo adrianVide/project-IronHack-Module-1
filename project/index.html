@@ -1,15 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>U there, Sun?</title>
-</head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
+    <div class="container-fluid m-3 center-block col-xs-1  flex-center">
+      <div class="row">
+        <div class="col-md-6 city city1">
+            <img class="weather-icon" src="./img/sun.png" alt='weather-icon'>
+            <span class="weather-description">Clear sky</span>
+            <span class="temperature">8°C</span>
+            <span class="city-time">19:33</span>
+            <span class="city-name">Madrid</span>
 
-    asdfasdfasdf
-<script src="./script/fetch.js"></script>    
-</body>
+        </div>
+        <div class="col-md-6 city city2">sdafsdf</div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 city city3">asdfasdf</div>
+        <div class="col-md-6 city city4">asdfasdf</div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 city city5">asdfasdf</div>
+        <div class="col-md-6 city city6">asdfasdf</div>
+      </div>
+    </div>
+    <div class="container-fluid m-3">
+        <img src="./img/user-01.png" class='user-icon' alt="user">
+        <span class="search-container">
+            <label for="site-search"></label>
+            <input type="search" id="site-search" name="q"
+            aria-label="Search city" placeholder="Search city">
+            <button><img class="mag-glass" src="./img/magnifying-glass.png" alt='magnifying-glass'></button>
+        </span>
+
+    </div>
+
+    <script src="js/fetch3.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

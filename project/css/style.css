@@ -1,0 +1,127 @@
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.city {
+    background-size: cover;
+    /* background-color: black; */
+    /* background-repeat: no-repeat; */
+    height: 250px;
+    max-width: 700px;
+    object-fit: cover;
+    margin: 1px;
+}
+
+.city1 {
+    background-image: url(.././img/holiday-inn-express-madrid-2533391696-2x1.jpeg);
+
+}
+
+.city2 {
+    background-image: url(.././img/GettyImages-1148127304.jpg);
+}
+
+.city3 {
+    background-image: url(.././img/iStock-896466722_Als-Schaufensterbild-Tokyo_1600x907.jpg);
+}
+
+.city4 {
+    background-image: url(.././img/kimpton-barcelona-1700x750-v2.jpeg);
+}
+.city5 {
+    background-image: url(.././img/tour_img-1708983-97.jpg);
+}
+
+.city6 {
+    background-image: url(.././img/us_lax_playa_07_2880_1620.jpg);
+}
+
+.user-icon {
+    width: 70px;
+    padding: 0;
+    margin-right: 5px;
+}
+
+.mag-glass {
+    width: 18px;
+    margin: 12px;
+    vertical-align: middle;
+}
+
+.search-container {
+    display: flex;
+    justify-content: space-between; 
+    background-color: rgb(242, 242, 242);
+    float: none;
+    width: 55%;
+}
+
+.search-container input {
+   width: 100%;
+   background-color: rgb(242, 242, 242);
+   border: none;
+   padding: 20px;
+}
+
+.logo-search-bar {
+   padding: 10px 25px;
+   /* justify-content: space-between; */
+}
+
+.search-container button {
+   color: white;
+   background-color: #EBEBEB;
+   padding-left: 2rem;
+   padding-right: 2rem;
+   font-family: 'Poppins';
+   font-size: 14px;
+   border: none;
+}
+
+.logo-search-bar a {
+  color: black;
+  /* background-color: black; */
+  padding: 10px 28px;
+}
+
+.usearch {
+    display: inline-flex;
+}
+
+.weather-icon {
+    height: 140px;
+    margin-top: 10px;
+}
+
+.weather-description {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 3em;
+    vertical-align: top;
+}
+
+.temperature {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 2em;
+    vertical-align: bottom;
+}
+
+.city-time {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 2em;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.city-name {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FF0095;
+    font-size: 2em;
+    vertical-align: bottom;
+    text-align: right;
+}

@@ -11,9 +11,7 @@ async function getCityInfo(requestedCity) {
 async function algo() {
     cityData = await getCityInfo("barcelona");
     console.log(cityData.name)
-    let div = document.createElement("div");
-    div.innerHTML = cityData.name;
-    div2.appendChild(div)
+    
     
 }
 algo();
