@@ -1,125 +1,97 @@
-
-
-
 * {
-    margin: 0;
-    padding: 0 ;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    margin: 20px;
+body {
+  margin: 20px;
 }
-
 
 .city {
-    background-size: cover;
-    /* background-color: black; */
-    background-repeat: no-repeat;
-    /* height: 250px; */
-    height: 18vw;
+  background-size: cover;
+  /* background-color: black; */
+  background-repeat: no-repeat;
+  /* height: 250px; */
+  height: 18vw;
 
-    /* max-width: 100%; */
-    /* object-fit: cover; */
-    /* margin: 1px; */
-    border: 5px solid white;
+  /* max-width: 100%; */
+  /* object-fit: cover; */
+  /* margin: 1px; */
+  border: 5px solid white;
 }
 
 #Barcelona {
-    background-image:linear-gradient(
-        rgba(200, 255, 0, 0.5), 
-        rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(200, 255, 0, 0.5), rgba(0, 0, 0, 0.8)),
     url(.././img/kimpton-barcelona-1700x750-v2.jpeg);
-        /* url(.././img/holiday-inn-express-madrid-2533391696-2x1.jpeg); */
-
+  /* url(.././img/holiday-inn-express-madrid-2533391696-2x1.jpeg); */
 }
 
 #New-York {
-    background-image:linear-gradient(
-        rgba(0, 0, 0, 0.2), 
-        rgba(0, 0, 0, 1)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)),
     url(.././img/GettyImages-1148127304.jpg);
 }
 
 #Tokyo {
-    background-image:linear-gradient(
-        
-        rgba(0, 0, 0, 0.2), 
-        rgba(0, 0, 0, 1)),
-        
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)),
     url(.././img/tokyo.jpg);
 }
 
 #Moscow {
-    background-image:linear-gradient(
-
-        rgba(200, 255, 0, 0.5), 
-        rgba(0, 0, 0, 0.8)),
-
+  background-image: linear-gradient(rgba(200, 255, 0, 0.5), rgba(0, 0, 0, 0.8)),
     url(.././img/moscow.jpg);
 }
 #Madrid {
-    background-image:linear-gradient(
-
-        rgba(200, 255, 0, 0.5), 
-        rgba(0, 0, 0, 0.8)),
-
+  background-image: linear-gradient(rgba(200, 255, 0, 0.5), rgba(0, 0, 0, 0.8)),
     url(.././img/holiday-inn-express-madrid-2533391696-2x1.jpeg);
 }
 
 #Los-Angeles {
-    background-image:linear-gradient(
-       
-        rgba(0, 0, 0, 0.2), 
-        rgba(0, 0, 0, 1)),
-    
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)),
     url(.././img/us_lax_playa_07_2880_1620.jpg);
 }
 
 .user-icon {
-    width: 70px;
-    padding: 0;
-    margin-right: 5px;
-    
+  width: 70px;
+  padding: 0;
+  margin-right: 5px;
 }
 
 .mag-glass {
-    width: 40px;
-    margin: 12px;
-    vertical-align: middle;
-    
+  width: 40px;
+  margin: 12px;
+  vertical-align: middle;
 }
 
 .search-container {
-    display: flex;
-    justify-content: space-between; 
-    background-color: rgb(242, 242, 242);
-    float: none;
-    width: 55%;
-    
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(242, 242, 242);
+  float: none;
+  width: 55%;
 }
 
 .search-container input {
-   width: 100%;
-   background-color: rgb(242, 242, 242);
-   border: none;
-   padding: 20px;
+  width: 100%;
+  background-color: rgb(242, 242, 242);
+  border: none;
+  padding: 20px;
 }
 
 .logo-search-bar {
-   padding: 10px 25px;
-   
-   /* justify-content: space-between; */
+  padding: 10px 25px;
+
+  /* justify-content: space-between; */
 }
 
 .search-container button {
-   color: white;
-   background-color: #EBEBEB;
-   padding-left: 2rem;
-   padding-right: 2rem;
-   font-family: 'Poppins';
-   font-size: 14px;
-   border: none;
+  color: white;
+  background-color: #ebebeb;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: "Poppins";
+  font-size: 14px;
+  border: none;
 }
 
 .logo-search-bar a {
@@ -128,117 +100,114 @@ body{
   padding: 10px 28px;
 }
 
-
 .weather-icon {
-    height: 10vw;
-    margin-top: 10px;
+  height: 10vw;
+  margin-top: 10px;
 }
 
 .weather-description {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: 3vw;
-    vertical-align: top;
-    position: absolute;
-    left: 25%;
-    top: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 3vw;
+  vertical-align: top;
+  position: absolute;
+  left: 25%;
+  top: 5%;
 }
 
 .temperature {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: 4vw;
-    vertical-align: bottom;
-    position: absolute;
-    left: 25%;
-    top: 25%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 4vw;
+  vertical-align: bottom;
+  position: absolute;
+  left: 25%;
+  top: 25%;
 }
 
 .city-time {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: 4vw;
-    vertical-align: bottom;
-    float: right;
-    position: absolute;
-    right: 3%;
-    bottom: 30%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 4vw;
+  vertical-align: bottom;
+  float: right;
+  position: absolute;
+  right: 3%;
+  bottom: 30%;
 }
 
 .city-name {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #FF0095;
-    font-size: 4.5vw;
-    vertical-align: bottom;
-    float: right;
-    /* padding-bottom: 0px; */
-    position: absolute;
-    bottom: 0%;
-    right: 3%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ff0095;
+  font-size: 4.5vw;
+  vertical-align: bottom;
+  float: right;
+  /* padding-bottom: 0px; */
+  position: absolute;
+  bottom: 0%;
+  right: 3%;
 }
 
 .fixed-menu {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 568px) {
-.fixed-menu {
+  .fixed-menu {
     position: fixed;
     background-color: white;
     bottom: 0px;
     margin: 0px !important;
-    
-}
+  }
 
-.city {
+  .city {
     height: 40vw;
-}
+    border: 0px;
+  }
 
-.mag-glass {
+  .mag-glass {
     width: 7vw;
     margin: 4px;
     vertical-align: middle;
-    
-}
+  }
 
-.logo-search-bar {
+  .logo-search-bar {
     padding: 2px 5px;
-    
-    /* justify-content: space-between; */
- }
 
- .user-icon {
+    /* justify-content: space-between; */
+  }
+
+  .user-icon {
     width: 50px;
     height: 50px;
-
-    
-}
-.search-container input {
+  }
+  .search-container input {
     width: auto;
     padding: 10px;
- }
+  }
 
- .city-time {
+  .city-time {
     font-size: 8vw;
-    bottom: 25%;
+    bottom: 28%;
+  }
 
- }
-
- .city-name {
-     font-size: 10vw;
- }
-.temperature {
+  .city-name {
+    font-size: 10vw;
+  }
+  .temperature {
     font-size: 8vw;
-    top: 15%
-}
+    top: 15%;
+  }
 
-.weather-icon {
-    height:  17vw;
-}
-.weather-description {
+  .weather-icon {
+    height: 17vw;
+  }
+  .weather-description {
     font-size: 5vw;
+  }
+  body {
+      margin: 0px;
+  }
 }
-}
-
