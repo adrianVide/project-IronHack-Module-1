@@ -2,46 +2,51 @@
 
 
 * {
+    margin: 0;
+    padding: 0 ;
     box-sizing: border-box;
 }
 
+body{
+    margin: 20px;
+}
 
 
 .city {
-    background-size: cover;
+    /* background-size: cover; */
     /* background-color: black; */
     /* background-repeat: no-repeat; */
     height: 250px;
-    max-width: 700px;
-    object-fit: cover;
-    margin: 1px;
+    /* max-width: 100%; */
+    /* object-fit: cover; */
+    /* margin: 1px; */
 }
 
-.city1 {
+#city1 {
     background:linear-gradient(
-        rgba(0, 183, 255, 0.45), 
+        rgba(255, 0, 149, 0.45), 
         rgba(255, 230, 0, 0.507)),
     url(.././img/holiday-inn-express-madrid-2533391696-2x1.jpeg);
     /* url(.././img/holiday-inn-express-madrid-2533391696-2x1.jpeg); */
 
 }
 
-.city2 {
+#city2 {
     background-image: url(.././img/GettyImages-1148127304.jpg);
 }
 
-.city3 {
+#city3 {
     background-image: url(.././img/iStock-896466722_Als-Schaufensterbild-Tokyo_1600x907.jpg);
 }
 
-.city4 {
+#city4 {
     background-image: url(.././img/kimpton-barcelona-1700x750-v2.jpeg);
 }
-.city5 {
+#city5 {
     background-image: url(.././img/tour_img-1708983-97.jpg);
 }
 
-.city6 {
+#city6 {
     background-image: url(.././img/us_lax_playa_07_2880_1620.jpg);
 }
 
@@ -108,28 +113,40 @@
     color: white;
     font-size: 3em;
     vertical-align: top;
+    position: absolute;
+    left: 25%;
+    top: 5%;
 }
 
 .temperature {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 2em;
+    font-size: 4em;
     vertical-align: bottom;
+    position: absolute;
+    left: 25%;
+    top: 25%;
 }
 
 .city-time {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 2em;
+    font-size: 4em;
     vertical-align: bottom;
     float: right;
+    position: absolute;
+    right: 3%;
+    bottom: 30%;
 }
 
 .city-name {
     font-family: Arial, Helvetica, sans-serif;
     color: #FF0095;
-    font-size: 4em;
+    font-size: 4.5em;
     vertical-align: bottom;
     float: right;
-    padding-bottom: 0px;
+    /* padding-bottom: 0px; */
+    position: absolute;
+    bottom: 0%;
+    right: 3%;
 }
