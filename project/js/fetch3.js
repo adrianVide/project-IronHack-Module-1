@@ -21,11 +21,10 @@ function getCityInfo(requestedCity) {
       let cityWeatherIcon = cityData.weather[0].icon;
       let cityTemp = Math.round(cityData.main.temp);
       let cityUnixTime = cityData.dt;
-      //   convertUnixTimestamptoTime(cityUnixTime);
       let cityUnixSunrise = cityData.sys.sunrise;
       let cityUnixSunset = cityData.sys.sunset;
       let cityId = cityName.split(' ').join('-');
-      //   isDay(cityUnixTime, cityUnixSunrise, cityUnixSunset);
+
       console.log(cityName);
       console.log(cityWeatherDescription);
       console.log(cityWeatherIcon);
@@ -34,14 +33,22 @@ function getCityInfo(requestedCity) {
       console.log(cityUnixSunrise);
       console.log(cityUnixSunset);
 
+      // function isDay(time, sunrise, sunset) {
+      //   if (time > sunrise && time < sunset) {
+      //     return true;
+      //   } else {
+      //     return false;
+      //   }
+      // }
+      // console.log(isDay(cityUnixTime, cityUnixSunrise, cityUnixSunset));
+
       function isDay(time, sunrise, sunset) {
-        if (time > sunrise && time < sunset) {
-          return true;
-        } else {
-          return false;
+          if (time > sunrise && time < sunset) {
+            return true;
+          } else {
+            return false;
+          }
         }
-      }
-      console.log(isDay(cityUnixTime, cityUnixSunrise, cityUnixSunset));
 
       function toTime(time) {
         var date = new Date(time * 1000);
@@ -59,7 +66,7 @@ function getCityInfo(requestedCity) {
             return "./img/sun.png";
             break;
           case "01n":
-            return "./img/moon.png.";
+            return "./img/moon.png";
             break;
           case "02d":
           case "02N":
@@ -90,7 +97,9 @@ function getCityInfo(requestedCity) {
         return "./img/sun.png";
       }
 
+
       let div = document.createElement("div");
+
       div.setAttribute("class", "col-md-6 city");
       div.setAttribute("id", cityId);
       div.innerHTML = `
@@ -99,7 +108,7 @@ function getCityInfo(requestedCity) {
       )} alt='weather-icon'></span>
       <div>
           <span class="weather-description">${cityWeatherDescription}</span>
-          <span class="temperature">${cityTemp}°C</span>
+          <span class="temperature">${cityTemp}°</span>
       </div>
       
       <div>
@@ -111,8 +120,9 @@ function getCityInfo(requestedCity) {
     });
 }
 
-let cities = ['madrid', 'barcelona', 'los angeles', 'tokyo', 'moscow', 'new york'];
 
+
+let cities = ['madrid', 'barcelona', 'los angeles', 'tokyo', 'moscow', 'new york'];
 
 cities.forEach(element => {
   return getCityInfo(element)

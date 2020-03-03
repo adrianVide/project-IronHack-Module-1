@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -89,9 +90,10 @@ body {
   background-color: #ebebeb;
   padding-left: 2rem;
   padding-right: 2rem;
-  font-family: "Poppins";
+  font-family: Montserrat, sans-serif;
   font-size: 14px;
   border: none;
+  font-weight: 600;
 }
 
 .logo-search-bar a {
@@ -106,27 +108,30 @@ body {
 }
 
 .weather-description {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Montserrat, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   color: white;
   font-size: 3vw;
   vertical-align: top;
   position: absolute;
   left: 25%;
+  font-weight: 600;
   top: 5%;
 }
 
 .temperature {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Montserrat, sans-serif;
   color: white;
-  font-size: 4vw;
+  font-size: 5vw;
   vertical-align: bottom;
   position: absolute;
   left: 25%;
   top: 25%;
+  font-weight: 300;
 }
 
 .city-time {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Montserrat, sans-serif;
   color: white;
   font-size: 4vw;
   vertical-align: bottom;
@@ -134,11 +139,14 @@ body {
   position: absolute;
   right: 3%;
   bottom: 30%;
+  font-weight: 400;
 }
 
 .city-name {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #ff0095;
+  font-family: Montserrat, sans-serif;
+  color: #ff1500;
+  /* color: #ff0d0d; */
+
   font-size: 4.5vw;
   vertical-align: bottom;
   float: right;
@@ -146,6 +154,7 @@ body {
   position: absolute;
   bottom: 0%;
   right: 3%;
+  font-weight: 400;
 }
 
 .fixed-menu {
@@ -154,12 +163,74 @@ body {
   justify-content: center;
 }
 
-@media (max-width: 568px) {
+@media (max-width: 640px) {
   .fixed-menu {
     position: fixed;
     background-color: white;
     bottom: 0px;
-    margin: 0px !important;
+    width: 100%;
+    /* margin: 0px !important; */
+  }
+
+  .city {
+    height: 40vw;
+    border: 0px;
+
+  }
+
+  .mag-glass {
+    width: 7vw;
+    margin: 4px;
+    vertical-align: middle;
+  }
+
+  .logo-search-bar {
+    padding: 2px 5px;
+
+    /* justify-content: space-between; */
+  }
+
+  .user-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+  }
+  .search-container input {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .city-time {
+    font-size: 8vw;
+    bottom: 25%;
+  }
+
+  .city-name {
+    font-size: 10vw;
+  }
+  .temperature {
+    font-size: 8vw;
+    top: 15%;
+  }
+
+  .weather-icon {
+    height: 17vw;
+  }
+  .weather-description {
+    font-size: 5vw;
+  }
+  body {
+      margin: 0px;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .fixed-menu {
+    position: fixed;
+    background-color: white;
+    bottom: 0px;
+    /* margin: 0px !important; */
   }
 
   .city {
@@ -182,6 +253,7 @@ body {
   .user-icon {
     width: 50px;
     height: 50px;
+    margin: 0px;
   }
   .search-container input {
     width: auto;
@@ -190,7 +262,7 @@ body {
 
   .city-time {
     font-size: 8vw;
-    bottom: 28%;
+    bottom: 25%;
   }
 
   .city-name {
