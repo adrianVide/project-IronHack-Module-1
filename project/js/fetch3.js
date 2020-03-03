@@ -98,7 +98,7 @@ function getCityInfo(requestedCity) {
 
       let div = document.createElement("div");
 
-      div.setAttribute("class", `col-md-6 city ${className}`);
+      div.setAttribute("class", `col-md-6 city`);
       div.setAttribute("id", cityId);
       div.innerHTML = `
       <span><img class="weather-icon" src=${selectIcon(
