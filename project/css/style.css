@@ -9,6 +9,11 @@ body {
   margin: 20px;
 }
 
+.btn-collapse {
+  background-color: #ebebeb;
+  color: #ff1500;
+}
+
 .btn-log-sign {
   background-color: #ff1500;
   color: #ebebeb;
@@ -34,33 +39,40 @@ body {
   border: 5px solid #ebebeb;
 }
 
+.is-day {
+  filter: saturate(0.5);
+}
+
+/* linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)),
+linear-gradient(rgba(200, 255, 0, 0.5), rgba(0, 0, 0, 0.8)), */
+
 #Barcelona {
-  background-image: linear-gradient(rgba(200, 255, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url(.././img/kimpton-barcelona-1700x750-v2.jpeg);
+  background-image: linear-gradient(rgba(200, 255, 0, 0), rgba(0, 0, 0, 0.8)),
+  url(.././img/kimpton-barcelona-1700x750-v2.jpeg);
   /* url(.././img/holiday-inn-express-madrid-2533391696-2x1.jpeg); */
 }
 
 #New-York {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)),
+  background-image: linear-gradient(rgba(200, 255, 0, 0), rgba(0, 0, 0, 0.8)),
     url(.././img/GettyImages-1148127304.jpg);
 }
 
 #Tokyo {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)),
+  background-image: linear-gradient(rgba(200, 255, 0, 0), rgba(0, 0, 0, 0.8)),
     url(.././img/tokyo.jpg);
 }
 
 #Moscow {
-  background-image: linear-gradient(rgba(200, 255, 0, 0.5), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(200, 255, 0, 0), rgba(0, 0, 0, 0.8)),
     url(.././img/moscow.jpg);
 }
 #Madrid {
-  background-image: linear-gradient(rgba(200, 255, 0, 0.5), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(200, 255, 0, 0), rgba(0, 0, 0, 0.8)),
     url(.././img/holiday-inn-express-madrid-2533391696-2x1.jpeg);
 }
 
 #Los-Angeles {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)),
+  background-image: linear-gradient(rgba(200, 255, 0, 0), rgba(0, 0, 0, 0.8)),
     url(.././img/us_lax_playa_07_2880_1620.jpg);
 }
 

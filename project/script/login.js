@@ -3,6 +3,8 @@ let password = document.getElementById("password");
 let logInButton = document.getElementById("log-in-button");
 let form = document.getElementById('login-form')
 let formWrapper = document.getElementsByClassName("form-wrapper")[0];
+
+
 let checkUser = () => {
     let usersDB = JSON.parse(localStorage.getItem('users'))
     counter = 0;
@@ -34,7 +36,7 @@ let validationMessage = () => {
     logInButton.remove()
 }
 let mainLogIn = () => {
-    event.preventDefault()
+    // event.preventDefault()
     if (!checkUser()) {
         errorUser()
     } else {
@@ -46,3 +48,5 @@ logInButton.addEventListener("click", function (event) {
     deleteErrors();
     mainLogIn();
 })
+
+console.log('hola')

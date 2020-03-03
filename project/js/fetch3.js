@@ -41,14 +41,12 @@ function getCityInfo(requestedCity) {
       //   }
       // }
       // console.log(isDay(cityUnixTime, cityUnixSunrise, cityUnixSunset));
+      
+      let className = 'is-night';
 
-      function isDay(time, sunrise, sunset) {
-          if (time > sunrise && time < sunset) {
-            return true;
-          } else {
-            return false;
-          }
-        }
+      if (cityUnixTime > cityUnixSunrise && cityUnixTime < cityUnixSunset) {
+        className = 'is-day';
+      } 
 
       function toTime(time) {
         var date = new Date(time * 1000);
@@ -100,7 +98,7 @@ function getCityInfo(requestedCity) {
 
       let div = document.createElement("div");
 
-      div.setAttribute("class", "col-md-6 city");
+      div.setAttribute("class", `col-md-6 city ${className}`);
       div.setAttribute("id", cityId);
       div.innerHTML = `
       <span><img class="weather-icon" src=${selectIcon(
