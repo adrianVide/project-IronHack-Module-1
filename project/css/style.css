@@ -40,7 +40,24 @@ body {
 }
 
 .is-day {
-  filter: saturate(0.5);
+  /* filter: saturate(0.5); */
+}
+
+.is-night {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+
 }
 
 /* linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)),
@@ -66,6 +83,11 @@ linear-gradient(rgba(200, 255, 0, 0.5), rgba(0, 0, 0, 0.8)), */
   background-image: linear-gradient(rgba(200, 255, 0, 0), rgba(0, 0, 0, 0.8)),
     url(.././img/moscow.jpg);
 }
+#Moscow:after {
+  background-image: linear-gradient(rgba(200, 255, 0, 0), rgba(0, 0, 0, 0.8)),
+    url(.././img/moscow.jpg);
+}
+
 #Madrid {
   background-image: linear-gradient(rgba(200, 255, 0, 0), rgba(0, 0, 0, 0.8)),
     url(.././img/holiday-inn-express-madrid-2533391696-2x1.jpeg);
@@ -152,6 +174,7 @@ linear-gradient(rgba(200, 255, 0, 0.5), rgba(0, 0, 0, 0.8)), */
   left: 25%;
   top: 25%;
   font-weight: 300;
+
 }
 
 .city-time {
@@ -179,6 +202,8 @@ linear-gradient(rgba(200, 255, 0, 0.5), rgba(0, 0, 0, 0.8)), */
   bottom: 0%;
   right: 3%;
   font-weight: 400;
+  
+
 }
 
 .fixed-menu {

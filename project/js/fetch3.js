@@ -111,7 +111,7 @@ function getCityInfo(requestedCity) {
       
       <div>
           <span class="city-time">${toTime(cityUnixTime)}</span>
-          <span class="city-name">${cityName}</span>
+          <span class="city-name ${className}">${cityName}</span>
       </div>`;
 
       cityContainer.appendChild(div);
