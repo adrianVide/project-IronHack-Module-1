@@ -1,41 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- para agregar el favicon -->
-
-    <!-- bootstrap 4 css -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!-- íconos fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/style.css">
-    <title>Dictator Killer - Game</title>
-
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="./img/favicon.png" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap" rel="stylesheet">
+        <script src="https://use.fontawesome.com/0604fa0e60.js"></script>
+        <title>SignUp | U there, Sun?</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+      </head>
 
 <body>
     <nav class="navbar navbar-expand-lg">
-        <a href="/index.html"> <img src="/images/logogranada.png" class="logo m-3" alt="logo-granada"></a>
-        <button type="button" class="navbar-toggler mb-2 " data-toggle="collapse" data-target="#nav"><i
-                class="fas fa-skull-crossbones"></i></button>
-        <div class="collapse navbar-collapse justify-content-end" id="nav">
-            <ul id="nav-ul" class="navbar-nav mr-5">
-                <li><a class="navli   px-1 mr-3" href="about.html">ABOUT</a></li>
-                <li><a class="navli   px-1 mr-3" href="game.html">GAME</a></li>
-                <li><a class="navli   px-1 mr-3" href="stats.html">STATS</a></li>
-                <li><a class="navli   px-1 mr-3" href="login.html">LOG IN </a></li>
-                <li><a class="navli   px-1 mr-3" href="signup.html"> SIGN UP</a></li>
-            </ul>
-        </div>
+        <!-- <a href="/index.html"> <img src="/images/logogranada.png" class="logo m-3" alt="logo-granada"></a> -->
+        <!-- <button type="button" class="navbar-toggler mb-2 " data-toggle="collapse" data-target="#nav"> -->
+           <a href="index.html"><i class="fa fa-5x fa-first-order uts-color"></i></a></button>
+        
     </nav>
     <hr>
    
@@ -49,18 +31,18 @@
                             <h3 class="display-3  my-4 mx-auto sign-up">SIGN-UP</h3>
 
                         </div>
-                        <input class="form-control  my-4 py-2" type="text" id="name" placeholder="Nombre"
+                        <input class="form-control  my-4 py-2" type="text" id="name" placeholder="Name"
                             autocomplete="off" required />
-                        <input class="form-control  my-4 py-2" type="email" id="email" placeholder="Email"
+                        <input class="form-control  my-4 py-2" type="email" id="email" placeholder="email"
                             autocomplete="off" required />
                        
-                        <input class="form-control  my-4 py-2" type="password" id="password" placeholder="******"
+                        <input class="form-control  my-4 py-2" type="password" id="password" placeholder="Password"
                             autocomplete="off" required />
-                        <input class="form-control  my-4 py-2" type="password" id="repeat-password" placeholder="******"
+                        <input class="form-control  my-4 py-2" type="password" id="repeat-password" placeholder="Repeat password"
                             autocomplete="off" required />
 
                         <button id="sign-up-btn" type="submit"
-                            class="py-2 my-3 col-lg-4  mx-auto text-center info-text btnsubmit">Sign Up!</button>
+                            class="py-2 my-3 col-lg-4  mx-auto text-center info-text btnsubmit btn-block btn-log-sign">Sign Up!</button>
                     </form>
 
                     <div class="errors-container"></div>
@@ -70,9 +52,9 @@
     </div>
 
 
-    <script src="/scripts/signup.js"></script>
-    <script src="/scripts/validator.js"></script>
-    <script src="/scripts/user.js"></script>
+    <script src="./script/signup.js"></script>
+    <script src="./script/validator.js"></script>
+    <script src="./script/user.js"></script>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

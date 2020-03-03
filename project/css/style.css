@@ -9,6 +9,18 @@ body {
   margin: 20px;
 }
 
+.btn-log-sign {
+  background-color: #ff1500;
+  color: #ebebeb;
+}
+
+.error {
+  color: #ff1500;
+}
+
+.uts-color {
+  color: #ff1500;
+}
 .city {
   background-size: cover;
   /* background-color: black; */
@@ -19,7 +31,7 @@ body {
   /* max-width: 100%; */
   /* object-fit: cover; */
   /* margin: 1px; */
-  border: 5px solid white;
+  border: 5px solid #ebebeb;
 }
 
 #Barcelona {

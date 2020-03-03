@@ -4,14 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./img/favicon.png" />
+    <script src="https://use.fontawesome.com/0604fa0e60.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap" rel="stylesheet">
 
     <title>U there, Sun?</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
   <body>
+    <!-- <nav class="navbar navbar-expand-lg"> -->
+      <!-- <a href="/index.html"> <img src="/images/logogranada.png" class="logo m-3" alt="logo-granada"></a> -->
+      <!-- <button type="button" class="navbar-toggler mb-2 " data-toggle="collapse" data-target="#nav"> -->
+        <div class="p-3 hidden-md-down row fixed-menu">
+
+        <a href="index.html"><i class="fa fa-5x fa-first-order uts-color float-left"></i></a></button>
+          <img src="./img/user-01.png" class='user-icon' alt="user">
+          <span class="search-container">
+              <label for="site-search"></label>
+              <input type="search" id="site-search" name="q"
+              aria-label="Search city" placeholder="Search city">
+              <button><img class="mag-glass" src="./img/magnifying-glass.png" alt='magnifying-glass'></button>
+          </span>
+  
+      </div>
+  
+        <!-- <hr> -->
+  <!-- </nav> -->
     <div class="container-fluid center-block col-xs-1 justify-content-center">
       <div id='city-container' class="row">
         <!-- <div id="Barcelona" class="col-md-6 city">
@@ -37,7 +57,7 @@
         <div id="city6" class="col-md-6 city">asdfasdf</div>
       </div> -->
     </div>
-    <div class=" row fixed-menu">
+    <div class="hidden-lg-up row fixed-menu">
         <img src="./img/user-01.png" class='user-icon' alt="user">
         <span class="search-container">
             <label for="site-search"></label>
