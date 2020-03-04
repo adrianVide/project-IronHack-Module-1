@@ -25,13 +25,13 @@ function getCityInfo(requestedCity) {
       let cityUnixSunset = cityData.sys.sunset;
       let cityId = cityName.split(' ').join('-');
       let cityDifTime = cityData.timezone;
-      console.log(cityName);
-      console.log(cityWeatherDescription);
-      console.log(cityWeatherIcon);
-      console.log(cityTemp);
-      console.log(cityUnixTime);
-      console.log(cityUnixSunrise);
-      console.log(cityUnixSunset);
+      // console.log(cityName);
+      // console.log(cityWeatherDescription);
+      // console.log(cityWeatherIcon);
+      // console.log(cityTemp);
+      // console.log(cityUnixTime);
+      // console.log(cityUnixSunrise);
+      // console.log(cityUnixSunset);
 
       // function isDay(time, sunrise, sunset) {
       //   if (time > sunrise && time < sunset) {
