@@ -76,6 +76,9 @@ body {
 
 /* linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)),
 linear-gradient(rgba(200, 255, 0, 0.5), rgba(0, 0, 0, 0.8)), */
+#city-container {
+  padding-bottom: 11vw;
+}
 
 #Barcelona {
   background-image: linear-gradient(rgba(200, 255, 0, 0), rgba(0, 0, 0, 0.8)),
