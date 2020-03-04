@@ -5,6 +5,7 @@
 let cityContainer = document.getElementById("city-container");
 
 function getCityInfo(requestedCity) {
+  
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${requestedCity}&units=metric&appid=f2e9867b2d799d7ffd947e467fc52274`
   )
