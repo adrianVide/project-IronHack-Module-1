@@ -46,7 +46,7 @@ body {
   }
   .city:hover {
     box-shadow: -3px 18px 20px 0px rgba(99,89,99,1);
-    transform: scale(1.2);
+    transform: scale(1.02);
     z-index: 999;
     border: 0px white;
   }
