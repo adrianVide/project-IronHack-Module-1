@@ -24,7 +24,7 @@ function getCityInfo(requestedCity) {
       let cityUnixSunrise = cityData.sys.sunrise;
       let cityUnixSunset = cityData.sys.sunset;
       let cityId = cityName.split(' ').join('-');
-
+      let cityDifTime = cityData.timezone;
       console.log(cityName);
       console.log(cityWeatherDescription);
       console.log(cityWeatherIcon);
@@ -110,7 +110,7 @@ function getCityInfo(requestedCity) {
       </div>
       
       <div>
-          <span class="city-time">${toTime(cityUnixTime)}</span>
+          <span class="city-time">${toTime(cityUnixTime + cityDifTime - 3600)}</span>
           <span class="city-name ${className}">${cityName}</span>
       </div>`;
 
