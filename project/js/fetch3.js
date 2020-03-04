@@ -120,7 +120,7 @@ function getCityInfo(requestedCity) {
 
 
 
-let cities = ['madrid', 'barcelona']//, 'los angeles', 'tokyo', 'moscow', 'new york'];
+let cities = ['madrid', 'barcelona', 'los angeles', 'tokyo', 'moscow', 'new york'];
 
 cities.forEach(element => {
   return getCityInfo(element)
