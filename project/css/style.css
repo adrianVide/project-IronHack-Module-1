@@ -39,6 +39,18 @@ body {
   border: 5px solid #ebebeb;
 }
 
+@media (min-width: 768px) {
+  .city {
+    box-shadow: -3px 6px 5px 0px rgba(176,164,176,1);
+  transition: all .3s ease-in-out;
+  }
+  .city:hover {
+    box-shadow: -3px 18px 20px 0px rgba(99,89,99,1);
+    transform: scale(1.05);
+  }
+}
+
+
 .is-day {
   /* filter: saturate(0.5); */
 }
