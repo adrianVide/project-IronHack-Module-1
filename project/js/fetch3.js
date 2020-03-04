@@ -6,7 +6,7 @@ let cityContainer = document.getElementById("city-container");
 
 function getCityInfo(requestedCity) {
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${requestedCity}&units=metric&appid=f2e9867b2d799d7ffd947e467fc52274`
+    `https://api.openweathermap.org/data/2.5/weather?q=${requestedCity}&units=metric&appid=f2e9867b2d799d7ffd947e467fc52274`
   )
     .then(function(response) {
       return response.json();
@@ -98,7 +98,7 @@ function getCityInfo(requestedCity) {
 
       let div = document.createElement("div");
 
-      div.setAttribute("class", `col-md-6 city`);
+      div.setAttribute("class", `col-md-5 m-lg-3 m-md-3 city`);
       div.setAttribute("id", cityId);
       div.innerHTML = `
       <span><img class="weather-icon" src=${selectIcon(
