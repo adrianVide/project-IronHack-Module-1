@@ -116,6 +116,8 @@ function searchCityInfo() {
 
       cityContainer.insertBefore(div, cityContainer.firstChild);
       pictSearch(citySearch);
+      citySearchInput.value = '';
+      citySearchInputBot.value = '';
     });
 }
 
