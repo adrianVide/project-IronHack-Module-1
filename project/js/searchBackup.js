@@ -1,11 +1,10 @@
 
 let searchButton = document.getElementsByClassName('search-button');
-let cityPict;
-let citySearchInput = document.getElementById('site-search');
 
 console.log(searchButton);
 function searchCityInfo() {
-    let citySearch = citySearchInput.value;
+    let citySearch = document.getElementById('site-search').value;
+
     console.log(citySearch)
     fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${citySearch}&units=metric&appid=f2e9867b2d799d7ffd947e467fc52274`
@@ -87,12 +86,12 @@ function searchCityInfo() {
           }
           return "./img/sun.png";
         }
-          
+  
   
         let div = document.createElement("div");
   
         div.setAttribute("class", `bg-primary col-md-10 m-lg-3 m-md-3 city`);
-        div.setAttribute("id", citySearch);
+        div.setAttribute("id", cityId);
         div.innerHTML = `
         <span><img class="weather-icon" src=${selectIcon(
           cityWeatherIcon
@@ -108,30 +107,8 @@ function searchCityInfo() {
         </div>`;
   
         cityContainer.insertBefore(div, cityContainer.firstChild);
-        pictSearch()
       });
   }
-
-// let pictCitySearch = document.getElementById('site-search').value;
-
-function pictSearch() {
-  let citySearch = citySearchInput.value
-  console.log("Aqui: " + citySearch)
-
-fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${citySearch}`)
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(myJson) {
-    console.log(myJson);
-    let cityPict = myJson.originalimage.source
-  console.log(cityPict);
-  
-  let pictDiv = document.getElementById(citySearch);
-  pictDiv.style.backgroundImage = `url('${cityPict}')`;
-  console.log(pictDiv)
-  });
-}
 
 
 searchButton[0].addEventListener('click', searchCityInfo);

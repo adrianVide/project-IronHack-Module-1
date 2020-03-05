@@ -28,6 +28,7 @@ body {
 }
 .city {
   background-size: cover;
+  background-position: center;
   /* background-color: black; */
   background-repeat: no-repeat;
   /* height: 250px; */

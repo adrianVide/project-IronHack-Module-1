@@ -49,4 +49,3 @@ logInButton.addEventListener("click", function (event) {
     mainLogIn();
 })
 
-console.log('hola')
