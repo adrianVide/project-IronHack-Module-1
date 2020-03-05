@@ -19,6 +19,7 @@ U there, Sun? is a static responsive web page were you can find weather info and
 - A way for users to store their cities in their personal area for quick access.
 - Logo.
 - Second word of weather conditions description also capitalized.
+- Close created div (x).
 
 
 ## Tech Challenge

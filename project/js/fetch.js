@@ -5,7 +5,6 @@
 let cityContainer = document.getElementById("city-container");
 
 function getCityInfo(requestedCity) {
-  
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${requestedCity}&units=metric&appid=f2e9867b2d799d7ffd947e467fc52274`
   )
@@ -24,7 +23,7 @@ function getCityInfo(requestedCity) {
       let cityUnixTime = cityData.dt;
       let cityUnixSunrise = cityData.sys.sunrise;
       let cityUnixSunset = cityData.sys.sunset;
-      let cityId = cityName.split(' ').join('-');
+      let cityId = cityName.split(" ").join("-");
       let cityDifTime = cityData.timezone;
       // console.log(cityName);
       // console.log(cityWeatherDescription);
@@ -42,12 +41,12 @@ function getCityInfo(requestedCity) {
       //   }
       // }
       // console.log(isDay(cityUnixTime, cityUnixSunrise, cityUnixSunset));
-      
-      let className = 'is-night';
+
+      let className = "is-night";
 
       if (cityUnixTime > cityUnixSunrise && cityUnixTime < cityUnixSunset) {
-        className = 'is-day';
-      } 
+        className = "is-day";
+      }
 
       function toTime(time) {
         var date = new Date(time * 1000);
@@ -96,7 +95,6 @@ function getCityInfo(requestedCity) {
         return "./img/sun.png";
       }
 
-
       let div = document.createElement("div");
 
       div.setAttribute("class", `col-md-5 m-lg-3 m-md-3 city`);
@@ -111,7 +109,9 @@ function getCityInfo(requestedCity) {
       </div>
       
       <div>
-          <span class="city-time">${toTime(cityUnixTime + cityDifTime - 3600)}</span>
+          <span class="city-time">${toTime(
+            cityUnixTime + cityDifTime - 3600
+          )}</span>
           <span class="city-name ${className}">${cityName}</span>
       </div>`;
 
@@ -119,15 +119,18 @@ function getCityInfo(requestedCity) {
     });
 }
 
-
-
-let cities = ['madrid', 'barcelona', 'los angeles', 'tokyo', 'moscow', 'new york'];
+let cities = [
+  "madrid",
+  "barcelona",
+  "los angeles",
+  "tokyo",
+  "moscow",
+  "new york"
+];
 
 cities.forEach(element => {
-  return getCityInfo(element)
-  
+  return getCityInfo(element);
 });
-
 
 // getCityInfo("barcelona");
 // getCityInfo("tokyo");

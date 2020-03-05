@@ -77,37 +77,37 @@ body {
 
 
 #Barcelona {
-  background-image: linear-gradient(rgba(200, 255, 0, 0), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
   url(.././img/kimpton-barcelona-1700x750-v2.jpeg);
   /* url(.././img/holiday-inn-express-madrid-2533391696-2x1.jpeg); */
 }
 
 #New-York {
-  background-image: linear-gradient(rgba(200, 255, 0, 0), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
     url(.././img/GettyImages-1148127304.jpg);
 }
 
 #Tokyo {
-  background-image: linear-gradient(rgba(200, 255, 0, 0), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
     url(.././img/tokyo.jpg);
 }
 
 #Moscow {
-  background-image: linear-gradient(rgba(200, 255, 0, 0), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
     url(.././img/moscow.jpg);
 }
 #Moscow:after {
-  background-image: linear-gradient(rgba(200, 255, 0, 0), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
     url(.././img/moscow.jpg);
 }
 
 #Madrid {
-  background-image: linear-gradient(rgba(200, 255, 0, 0), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
     url(.././img/holiday-inn-express-madrid-2533391696-2x1.jpeg);
 }
 
 #Los-Angeles {
-  background-image: linear-gradient(rgba(200, 255, 0, 0), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
     url(.././img/us_lax_playa_07_2880_1620.jpg);
 }
 
