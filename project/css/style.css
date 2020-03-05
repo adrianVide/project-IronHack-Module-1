@@ -153,6 +153,8 @@ body {
   font-size: 14px;
   border: none;
   font-weight: 600;
+  /* box-shadow: -3px 6px 5px 0px rgba(176,164,176,1); */
+
 }
 
 .logo-search-bar a {
