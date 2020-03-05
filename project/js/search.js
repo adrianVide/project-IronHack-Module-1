@@ -1,10 +1,17 @@
 let searchButton = document.getElementsByClassName("search-button");
 let cityPict;
 let citySearchInput = document.getElementById("site-search");
+let citySearchInputBot = document.getElementById("site-search-bottom");
+
 
 console.log(searchButton);
 function searchCityInfo() {
-  let citySearch = citySearchInput.value;
+  let citySearch;
+  if (citySearchInput.value.length > citySearchInputBot.value.length) {
+    citySearch = citySearchInput.value;
+  } else {
+    citySearch = citySearchInputBot.value;
+  }
   console.log(citySearch);
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${citySearch}&units=metric&appid=f2e9867b2d799d7ffd947e467fc52274`
@@ -108,14 +115,14 @@ function searchCityInfo() {
         </div>`;
 
       cityContainer.insertBefore(div, cityContainer.firstChild);
-      pictSearch();
+      pictSearch(citySearch);
     });
 }
 
 // let pictCitySearch = document.getElementById('site-search').value;
 
-function pictSearch() {
-  let citySearch = citySearchInput.value;
+function pictSearch(citySearch) {
+  //let citySearch = citySearchInput.value;
   // console.log("Aqui: " + citySearch)
 
   fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${citySearch}`)
