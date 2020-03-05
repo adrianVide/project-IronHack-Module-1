@@ -128,7 +128,8 @@ fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${citySearch}`)
   console.log(cityPict);
   
   let pictDiv = document.getElementById(citySearch);
-  pictDiv.style.backgroundImage = `url('${cityPict}')`;
+  pictDiv.style.backgroundImage = `linear-gradient(rgba(200, 255, 0, 0), rgba(0, 0, 0, 0.8)),
+  url('${cityPict}')`;
   console.log(pictDiv)
   });
 }
