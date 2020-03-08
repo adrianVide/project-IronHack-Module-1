@@ -2,6 +2,7 @@ let searchButton = document.getElementsByClassName("search-button");
 let cityPict;
 let citySearchInput = document.getElementById("site-search");
 let citySearchInputBot = document.getElementById("site-search-bottom");
+// let searchBar = document.getElementById
 
 
 console.log(searchButton);
@@ -143,5 +144,22 @@ function pictSearch(citySearch) {
     });
 }
 
+// citySearchInput.addEventListener('keypress', searchCityInfo);
+
 searchButton[0].addEventListener("click", searchCityInfo);
 searchButton[1].addEventListener("click", searchCityInfo);
+
+
+
+//Making enter keystroke search in both input fields
+document.querySelector('#site-search').addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    searchCityInfo();
+  }
+});
+
+document.querySelector('#site-search-bottom').addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    searchCityInfo();
+  }
+});
