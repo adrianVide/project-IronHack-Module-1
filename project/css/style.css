@@ -7,7 +7,6 @@
 
 body {
   background-color: rgb(242, 242, 242);
-
   margin: 20px;
 }
 
@@ -182,7 +181,7 @@ body {
 
 .search-container input {
   width: 100%;
-  background-color: rgb(242, 242, 242);
+  background-color: rgb(255, 255, 255);
   border: none;
   padding: 20px;
 }
