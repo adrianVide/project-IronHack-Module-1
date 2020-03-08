@@ -97,7 +97,7 @@ function searchCityInfo() {
 
       let div = document.createElement("div");
 
-      div.setAttribute("class", `bg-primary col-md-10 m-lg-3 m-md-3 city`);
+      div.setAttribute("class", `bg-primary col-md-8 m-lg-3 m-md-3 city`);
       div.setAttribute("id", citySearch);
       div.innerHTML = `
         <span><img class="weather-icon" src=${selectIcon(
